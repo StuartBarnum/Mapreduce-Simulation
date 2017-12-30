@@ -1,5 +1,8 @@
 import json
 
+#The class MapReduce provides an environment that simulates the MapReduce
+#environment. All of the Python scripts in this project use this class.
+
 class MapReduce:
     def __init__(self):
         self.intermediate = {}
