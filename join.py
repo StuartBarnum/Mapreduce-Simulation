@@ -26,3 +26,4 @@ mr.execute(inputdata, mapper, reducer)
 
 #for line in inputdata:
 #    print line
+
