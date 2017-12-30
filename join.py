@@ -24,6 +24,4 @@ inputdata = open("records.json")
 #inputdata = open(sys.argv[1])
 mr.execute(inputdata, mapper, reducer)
 
-#for line in inputdata:
-#    print line
 
