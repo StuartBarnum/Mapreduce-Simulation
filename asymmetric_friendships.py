@@ -1,6 +1,20 @@
 import sys
 from MapReduce import MapReduce
 
+# The relationship "friend" is often symmetric, meaning that if I am your friend, you are my
+# friend. Implement a MapReduce algorithm to check whether this property holds. Generate a list
+# of all non-symmetric friend relationships.
+
+# Map Input
+# Each input record is a 2 element list [personA, personB] where personA is a string representing
+# the name of a person and personB is a string representing the name of one of personA's friends.
+# Note that it may or may not be the case that the personA is a friend of personB.
+
+# Reduce Output
+# The output should be all pairs of individuals in the dataset such that one of the individuals is
+# a friend of the other but not vice versa.
+
+
 # Part 1
 mr = MapReduce()
 

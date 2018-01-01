@@ -1,6 +1,32 @@
 import sys
 from MapReduce import MapReduce
 
+# Coursera exercise:
+
+# Implement a relational join as a MapReduce query
+
+# Consider the following SQL query:
+# SELECT *
+# FROM Orders, LineItem
+# WHERE Order.order_id = LineItem.order_id
+
+# Each "Map" input record is a list of strings representing a tuple in the database. Each list
+# element corresponds to a different attribute of the table
+
+# The first item (index 0) in each record is a string that identifies the table the record
+# originates from. This field has two possible values:
+
+# "line_item" indicates that the record is a line item.
+# "order" indicates that the record is an order.
+# The second element (index 1) in each record is the order_id.
+
+# LineItem records have 17 attributes including the identifier string.
+
+# Order records have 10 elements including the identifier string.
+
+# The "reducer" output should be a joined record: a single list of length 27 that contains the attributes
+# from the order record followed by the fields from the line item record. Each list element should be a string.
+
 # Part 1
 mr = MapReduce()
 

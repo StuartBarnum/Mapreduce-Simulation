@@ -1,6 +1,20 @@
 import sys
 from MapReduce import MapReduce
 
+# Consider a set of key-value pairs where each key is sequence id and each value is a string of
+# nucleotides, e.g., GCTTCCGAAATGCTCGAA....
+
+# Write a MapReduce query to remove the last 10 characters from each string of nucleotides, then
+# remove any duplicates generated.
+
+# Map Input
+# Each input record is a 2 element list [sequence id, nucleotides] where sequence id is a string
+# representing a unique identifier for the sequence and nucleotides is a string representing a
+# sequence of nucleotides
+
+# Reduce Output
+# The output from the reduce function should be the unique trimmed nucleotide strings.
+
 # Part 1
 mr = MapReduce()
 

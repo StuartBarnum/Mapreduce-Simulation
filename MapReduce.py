@@ -1,7 +1,7 @@
 import json
 
-#The class MapReduce provides an environment that simulates the MapReduce
-#environment. All of the Python scripts in this project use this class.
+#Python library designed to "faithfully implement" the MapReduce programming model. All of the
+#Python scripts in this project make use of this library (and the class MapReduce).
 
 class MapReduce:
     def __init__(self):

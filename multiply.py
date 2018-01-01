@@ -1,6 +1,22 @@
 import sys
 from MapReduce import MapReduce
 
+# Assume you have two matrices A and B in a sparse matrix format, where each record is of the
+# form i, j, value. Design a MapReduce algorithm to compute the matrix multiplication A x B
+
+# Map Input
+# The input to the map function will be a row of a matrix represented as a list. Each list will
+# be of the form [matrix, i, j, value] where matrix is a string and i, j, and value are integers.
+
+# The first item, matrix, is a string that identifies which matrix the record originates from.
+# This field has two possible values: "a" indicates that the record is from matrix A and "b"
+# indicates that the record is from matrix B
+
+# Reduce Output
+# The output from the reduce function will also be a row of the result matrix represented as a
+# tuple. Each tuple will be of the form (i, j, value) where each element is an integer.
+
+
 # Part 1
 mr = MapReduce()
 
@@ -12,7 +28,6 @@ def mapper(record):
         mr.emit_intermediate((record[0],record[1]),(record[2],record[3]))
     if record[0] == 'b':
         mr.emit_intermediate((record[0],record[2]),(record[1],record[3]))
-
 
 # Part 3
 def reducer(key_a, pairs):
