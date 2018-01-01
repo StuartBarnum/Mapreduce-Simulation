@@ -1,6 +1,8 @@
 import sys
 from MapReduce import MapReduce
 
+# Coursera exercise:
+
 # Assume you have two matrices A and B in a sparse matrix format, where each record is of the
 # form i, j, value. Design a MapReduce algorithm to compute the matrix multiplication A x B
 
