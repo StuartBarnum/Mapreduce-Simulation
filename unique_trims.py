@@ -1,6 +1,8 @@
 import sys
 from MapReduce import MapReduce
 
+# Coursera exercise:
+
 # Consider a set of key-value pairs where each key is sequence id and each value is a string of
 # nucleotides, e.g., GCTTCCGAAATGCTCGAA....
 

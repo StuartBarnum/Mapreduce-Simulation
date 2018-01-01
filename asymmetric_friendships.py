@@ -1,6 +1,8 @@
 import sys
 from MapReduce import MapReduce
 
+# Coursera exercise:
+
 # The relationship "friend" is often symmetric, meaning that if I am your friend, you are my
 # friend. Implement a MapReduce algorithm to check whether this property holds. Generate a list
 # of all non-symmetric friend relationships.
